@@ -1,23 +1,72 @@
 package br.com.sage.Model;
 
-import javax.swing.*;
-import java.util.ArrayList;
 
 public class Cliente {
-    private String nomeCompleto;
-    private Data nascidoEm;
+    private String nome;
     private String cpf;
     private String endereco;
     private String numeroContato;
-    private ArrayList<String> os;
-    private Data dataOs;
+    private String planoContratadoStr;
+    private String genero;
 
-    public Cliente(String nomeCompletoObj, Data nascidoEmObj, String cpfObj, String enderecoObj, String numeroContatoObj){
-        this.nomeCompleto = nomeCompletoObj;
-        this.nascidoEm = nascidoEmObj;
-        this.cpf = cpfObj;
-        this.endereco = enderecoObj;
-        this.numeroContato = numeroContatoObj;
+    public Cliente(String nomeCompleto, String cpf, String endereco, String numeroContato, String planoContratadoStr, String genero){
+        this.nome = nomeCompleto;
+        this.cpf = cpf;
+        this.endereco = endereco;
+        this.numeroContato = numeroContato;
+        this.planoContratadoStr = planoContratadoStr;
+        this.genero = genero;
+    }
+
+
+    public String getCpfCnpj() {
+        return cpf;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
+    }
+
+    public String getNumeroContato() {
+        return numeroContato;
+    }
+
+    public void setNumeroContato(String numeroContato) {
+        this.numeroContato = numeroContato;
+    }
+
+
+    public String getPlanoContratadoStr() {
+        return planoContratadoStr;
+    }
+
+    public void setPlanoContratadoStr(String planoContratadoStr) {
+        this.planoContratadoStr = planoContratadoStr;
+    }
+
+    public String getGenero() {
+        return genero;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
     }
 
 

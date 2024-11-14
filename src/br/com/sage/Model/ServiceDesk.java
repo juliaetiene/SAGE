@@ -1,10 +1,12 @@
 package br.com.sage.Model;
 
-public class ServiceDesk extends Usuario{
+public class ServiceDesk extends Funcionario{
 
-    public ServiceDesk(String nome, Data nascidoEm, Enum cargo, double salario){
-        super(nome, nascidoEm, cargo,salario);
+    public ServiceDesk(String nome, Enum cargo, double salario, Enum genero){
+        super(nome, cargo,salario, genero);
     }
+
+
 
 
 }

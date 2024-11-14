@@ -1,16 +1,15 @@
 package br.com.sage.Model;
 
-public abstract class  Usuario {
+public abstract class Funcionario {
     private String nome;
-    private Data nascidoEm;
     private Enum cargo;
     private double  salario;
+    private Enum genero;
 
-
-    public Usuario(String nomeObj, Data nascidoEmObj, Enum cargoObj, double salario ){
+    public Funcionario(String nomeObj, Enum cargoObj, double salario, Enum genero ){
         this.nome = nomeObj;
-        this.nascidoEm = nascidoEmObj;
         this.cargo = cargoObj;
         this.salario = salario;
+        this.genero = genero;
     }
 }
